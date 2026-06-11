@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Valentina Hernandez | UX/UI Product Designer</title>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar dark" id="navbar">
+        <div class="nav-logo">
+            <img src="../assets/Logo nav bar.png" alt="Logo" class="logo" />
+        </div>
+
+        <nav class="nav-menu">
+            <a class="nav-item active" href="#hero" data-i18n="nav_home">Inicio</a>
+            <a class="nav-item" href="#proyectos" data-i18n="nav_projects">Proyectos</a>
+            <a class="nav-item" href="#sobre" data-i18n="nav_about">Sobre mí</a>
+            <a class="nav-item" href="#proceso" data-i18n="nav_how">Cómo trabajo</a>
+        </nav>
+
+        <div class="nav-actions">
+            <div class="lang-switch" id="langSwitch">
+                <span class="lang-opt active" data-lang="es">ES</span>
+                <span class="lang-opt" data-lang="en">EN</span>
+            </div>
+            <a href="#contacto" class="btn btn-primary" data-i18n="nav_contact">Hablemos</a>
+        </div>
+
+        <div class="nav-mobile-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+        </div>
+    </header>
+
+    <!-- MENU MOBILE OVERLAY -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <a href="#hero" class="mobile-link" data-i18n="nav_home">Inicio</a>
+            <a href="#proyectos" class="mobile-link" data-i18n="nav_projects">Proyectos</a>
+            <a href="#sobre" class="mobile-link" data-i18n="nav_about">Sobre mí</a>
+            <a href="#proceso" class="mobile-link" data-i18n="nav_how">Cómo trabajo</a>
+        </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-left">
+            <p class="role" data-i18n="hero_rol">Diseñadora de producto · UX/UI</p>
+
+            <h1 class="h1">
+                <span data-i18n="hero_h1_1">Valentina</span><br />
+                <span data-i18n="hero_h1_2">Hernandez</span>
+            </h1>
+
+            <p class="hero-text">
+                <span data-i18n="hero_phrase">Diseño productos que las personas </span>
+                <span id="rotating-word">comprenden.</span>
+            </p>
+
+            <div class="hero-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#proyectos" class="btn btn-primary btn-cta">
+                    <span data-i18n="hero_cta_primary">Ver proyectos</span>
+                    <img src="../assets/arrow-forward.svg" alt="Arrow" class="btn-icon" />
+                </a>
+                <a href="../assets/CV.pdf" class="btn btn-secondary btn-secondary-dark btn-cta" download>
+                    <span data-i18n="hero_cta_secondary">Descargar CV</span>
+                    <img src="../assets/download-outline.svg" alt="Download" class="btn-icon" />
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <img src="../assets/Grafico hero.png" alt="Grafico Hero" class="hero-graphic" />
+        </div>
+
+        <div class="scroll-indicator">
+            <span data-i18n="scroll_ind">Scroll</span>
+            <svg class="chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section-light" id="proyectos">
+        <div class="projects-header gs-reveal-clip">
+            <p class="proj-eyebrow eyebrow" data-i18n="proj_eyebrow">Proyectos destacados</p>
+            <h2 class="proj-title" data-i18n="proj_title">Diseño productos digitales con enfoque estratégico.</h2>
+            <p class="proj-desc body" data-i18n="proj_desc" style="max-width: 640px; margin-bottom: 24px;">Una selección
+                de proyectos enfocados en producto, experiencia de usuario y sistemas digitales escalables.</p>
+            <p class="proj-note" data-i18n="proj_note">Este portafolio incluye proyectos bajo acuerdos de
+                confidencialidad. Las pantallas mostradas son representativas del proceso y no exponen datos sensibles
+                de los clientes.</p>
+        </div>
+
+        <div class="projects-grid gs-fade-up">
+            <!-- 1. Superapp -->
+            <div class="project-card large" data-project="superapp">
+                <div class="project-card-bg"><img src="../assets/Superapp portada.png" alt="Superapp"></div>
+                <div class="project-content">
+                    <span class="project-category" data-i18n="proj1_cat">Fintech · Mobile</span>
+                    <h3 class="project-title" data-i18n="proj1_title">Superapp</h3>
+                    <p class="project-description" data-i18n="proj1_desc">Diseño de una app financiera para centralizar
+                        cuentas, gestionar finanzas y simplificar la toma de decisiones.</p>
+                    <span class="project-view-more" data-i18n="proj_btn_more">Ver más →</span>
+                </div>
+            </div>
+
+            <!-- 2. E2P -->
+            <div class="project-card medium" data-project="e2p">
+                <div class="project-card-bg"><img src="../assets/E2P.png" alt="E2P"></div>
+                <div class="project-content">
+                    <span class="project-category" data-i18n="proj2_cat">AI · Enterprise</span>
+                    <h3 class="project-title" data-i18n="proj2_title">E2P</h3>
+                    <p class="project-description" data-i18n="proj2_desc">Rediseño de una plataforma de inteligencia
+                        artificial para optimizar la gestión de procesos empresariales.</p>
+                    <span class="project-view-more" data-i18n="proj_btn_more">Ver más →</span>
+                </div>
+            </div>
+
+            <!-- 3. CUBO -->
+            <div class="project-card medium" data-project="cubo">
+                <div class="project-card-bg"><img src="../assets/CUBO.png" alt="CUBO"></div>
+                <div class="project-content">
+                    <span class="project-category" data-i18n="proj3_cat">Fintech · SaaS B2B</span>
+                    <h3 class="project-title" data-i18n="proj3_title">CUBO</h3>
+                    <p class="project-description" data-i18n="proj3_desc">Diseño de una plataforma B2B para centralizar
+                        y optimizar la gestión de pagos de nómina y proveedores.</p>
+                    <span class="project-view-more" data-i18n="proj_btn_more">Ver más →</span>
+                </div>
+            </div>
+
+            <!-- 4. Drimtim -->
+            <div class="project-card large" data-project="drimtim">
+                <div class="project-card-bg"><img src="../assets/Portada Drimitim.png" alt="Drimtim"></div>
+                <div class="project-content">
+                    <span class="project-category" data-i18n="proj4_cat">HRTech · Web</span>
+                    <h3 class="project-title" data-i18n="proj4_title">Drimtim</h3>
+                    <p class="project-description" data-i18n="proj4_desc">Optimización de una plataforma ERP para una
+                        empresa de outsourcing y administración de talento humano.</p>
+                    <span class="project-view-more" data-i18n="proj_btn_more">Ver más →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT OVERLAY -->
+    <div class="project-overlay" id="project-overlay">
+        <div class="overlay-backdrop" id="overlay-backdrop"></div>
+        <div class="overlay-panel">
+            <button class="overlay-close" id="overlay-close" aria-label="Close">&times;</button>
+            <div class="overlay-content-wrapper">
+                <div class="overlay-banner" id="overlay-hero"></div>
+
+                <div class="overlay-header">
+                    <p class="overlay-eyebrow" id="overlay-category"></p>
+                    <h2 class="h2 overlay-title" id="overlay-title"></h2>
+                    <p class="overlay-summary body" id="overlay-summary"></p>
+                </div>
+
+                <div class="overlay-grid">
+                    <div class="overlay-card">
+                        <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="4" />
+                            <line x1="21.17" y1="8" x2="12" y2="8" />
+                            <line x1="3.95" y1="6.06" x2="8.54" y2="14" />
+                            <line x1="10.88" y1="21.94" x2="15.46" y2="14" />
+                        </svg>
+                        <h4 class="overlay-subtitle" data-i18n="proj_challenge">Reto</h4>
+                        <p class="body" id="overlay-challenge"></p>
+                    </div>
+
+                    <div class="overlay-card">
+                        <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                        <h4 class="overlay-subtitle" data-i18n="proj_role_title">Mi rol</h4>
+                        <div class="body" id="overlay-role"></div>
+                    </div>
+                </div>
+
+                <div class="overlay-outcome">
+                    <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    <h4 class="overlay-subtitle" data-i18n="proj_result_title">Resultado</h4>
+                    <p class="body" id="overlay-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FRASE DE DESCANSO -->
+    <section class="quote-section">
+        <h2 class="quote-text" data-i18n="quote_text">Menos ruido. Más intención.</h2>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section-light" id="sobre">
+        <div class="about-light"></div>
+        <div class="about-container">
+            <img src="../assets/Foto mia.png" alt="Valentina Hernandez" class="about-photo gs-fade-up" />
+
+            <div class="about-content gs-fade-up">
+                <p class="eyebrow" data-i18n="about_eyebrow">Sobre mí</p>
+                <h2 class="h2" style="margin-bottom: 24px;" data-i18n="about_title">Diseño con intención.</h2>
+
+                <div class="body" style="margin-bottom: 32px;" id="about-desc">
+                    <!-- JS fills this with about_p1, about_p2, etc. -->
+                </div>
+
+                <div class="tabs">
+                    <span class="tab active" data-tab="exp" data-i18n="tab_exp">Experiencia</span>
+                    <span class="tab" data-tab="edu" data-i18n="tab_edu">Estudios</span>
+                    <span class="tab" data-tab="rec" data-i18n="tab_rec">Habilidades</span>
+                    <span class="tab" data-tab="tools" data-i18n="tab_tools">Herramientas</span>
+                </div>
+
+                <div class="tab-content" id="tab-exp">
+                    <!-- JS Fills experience content -->
+                </div>
+                <div class="tab-content" id="tab-edu" style="display: none;">
+                    <!-- JS Fills education content -->
+                </div>
+                <div class="tab-content" id="tab-rec" style="display: none;">
+                    <!-- JS Fills skills content -->
+                </div>
+                <div class="tab-content" id="tab-tools" style="display: none;">
+                    <!-- JS Fills tools content -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO TRABAJO -->
+    <section id="proceso" class="how-section">
+        <div class="how-header-wrapper gs-reveal-clip">
+            <p class="how-eyebrow" data-i18n="how_eyebrow">CÓMO TRABAJO</p>
+            <h2 class="how-headline" data-i18n="how_title">Cada proyecto empieza con preguntas. El diseño es cómo las
+                respondo.</h2>
+        </div>
+
+        <div class="how-grid gs-fade-up">
+            <div class="how-card card-01">
+                <div class="how-number-wrapper">
+                    <div class="how-glow-line glow-01"></div>
+                    <span class="how-number">01</span>
+                </div>
+                <h4 class="how-card-title" data-i18n="how_card1_title">Entender antes de diseñar</h4>
+                <p class="how-card-body" data-i18n="how_card1_desc">Me involucro en el proyecto desde su raíz: escucho a
+                    los usuarios, comprendo los objetivos del negocio y mapeo el contexto completo para tomar decisiones
+                    de diseño.</p>
+            </div>
+
+            <div class="how-card card-02">
+                <div class="how-number-wrapper">
+                    <div class="how-glow-line glow-02"></div>
+                    <span class="how-number">02</span>
+                </div>
+                <h4 class="how-card-title" data-i18n="how_card2_title">Diseñar para generar valor</h4>
+                <p class="how-card-body" data-i18n="how_card2_desc">Cada decisión de diseño responde a un objetivo
+                    claro. Diseño experiencias accesibles, funcionales y pensadas para contextos reales de uso.</p>
+            </div>
+
+            <div class="how-card card-03">
+                <div class="how-number-wrapper">
+                    <div class="how-glow-line glow-03"></div>
+                    <span class="how-number">03</span>
+                </div>
+                <h4 class="how-card-title" data-i18n="how_card3_title">Construir para escalar</h4>
+                <p class="how-card-body" data-i18n="how_card3_desc">Pienso en sistemas, no en pantallas aisladas. Diseño
+                    soluciones coherentes y escalables, cuidando los detalles visuales y de interacción para mantener
+                    consistencia a medida que el producto evoluciona.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="footer-section">
+        <h2 class="h2" style="margin-bottom: 24px; color:#FFFFFF;" data-i18n="footer_title">¿Tienes un proyecto en
+            mente?</h2>
+        <a href="mailto:Vahernandezb.es@gmail.com" class="btn btn-primary btn-lg" style="margin-bottom: 60px;"
+            data-i18n="footer_cta">Hablemos.</a>
+
+        <div class="footer-links body">
+            <a href="mailto:Vahernandezb.es@gmail.com">Vahernandezb.es@gmail.com</a>
+            <span class="divider">·</span>
+            <a href="https://linkedin.com/in/valentinahernandezbautista" target="_blank">LinkedIn</a>
+            <span class="divider">·</span>
+            <a href="tel:+34641114481">+34 641 11 44 81</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
